@@ -2,5 +2,5 @@ powershell.exe
 Get-Process *anydesk* | Stop-Process -Force
 Remove-Item -Path "C:\ProgramData\AnyDesk" -Recurse  -Force -ErrorAction SilentlyContinue
 $anyDeskPath = Join-Path -Path $env:APPDATA -ChildPath "AnyDesk"
-Remove-Item -LiteralPath $anyDeskPath -Recurse -force -Force -ErrorAction SilentlyContinue
+Remove-Item -LiteralPath $anyDeskPath -Recurse -Force -ErrorAction SilentlyContinue
 write-host 'done!!! please open Anydesk'
